@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!--
+	bean definitions here -->
+
+	<bean id="myEmp" class="com.mipl.DemoAp.Employee">
+		<property name="role" value="Developer"></property>
+		<property name="name" value="Adam"></property>
+		<property name="empNo" value="5101"></property>
+		
+	</bean>
+	<bean id="myEmp2" class="com.mipl.DemoAp.Employee">
+		<constructor-arg name="role" value="Developer"></constructor-arg>
+		<constructor-arg name="name" value="Madhu"></constructor-arg>
+		<constructor-arg name="empNo" value="5102"></constructor-arg>
+
+	</bean>
+
+</beans>
+
+
+
+
+
