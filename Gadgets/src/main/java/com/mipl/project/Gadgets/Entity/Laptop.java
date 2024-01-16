@@ -1,7 +1,9 @@
 package com.mipl.project.Gadgets.Entity;
 
+
 public class Laptop {
 
+	
 	private int productID;
 
 	private String name;

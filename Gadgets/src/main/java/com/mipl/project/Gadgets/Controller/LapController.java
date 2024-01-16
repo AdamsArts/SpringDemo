@@ -15,8 +15,8 @@ import com.mipl.project.Gadgets.Service.LapInfo;
 @RestController
 @RequestMapping("/myLaptop")
 public class LapController {
-	@Autowired
-	private LapInfo lapinfo;
+//	@Autowired
+//	private LapInfo lapinfo;
 	
 	@PostMapping("/insertRecord")
 	public String insertRecord(@RequestBody Laptop laptop) {
