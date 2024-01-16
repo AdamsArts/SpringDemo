@@ -18,10 +18,19 @@ public class LapInfo {
 					new Laptop(2,"HP",48000,"Windows 11")));
 
 	public static List<Laptop> lapCollection() {
-		// TODO Auto-generated method stub
+		
 		return lapDetails;
 	}
+
 	
+
+	public static String insertLap(Laptop laptop) {
+		lapDetails.add(laptop);
+System.out.println("inserted");
+		return "Record inserted";
+	}
+
+
 	
 	
 
