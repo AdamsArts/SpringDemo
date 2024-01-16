@@ -1,4 +1,4 @@
-package com.mipl.project.Entity;
+package com.mipl.project.Gadgets.Entity;
 
 public class Laptop {
 

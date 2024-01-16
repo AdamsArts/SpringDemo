@@ -8,6 +8,7 @@ public class GadgetsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GadgetsApplication.class, args);
+		System.out.println("App Started");
 	}
 
 }

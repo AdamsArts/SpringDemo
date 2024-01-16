@@ -1,4 +1,4 @@
-package com.mipl.project.Service;
+package com.mipl.project.Gadgets.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.mipl.project.Entity.Laptop;
+import com.mipl.project.Gadgets.Entity.Laptop;
+
+
 
 @Service
 public class LapInfo {
