@@ -11,8 +11,13 @@ import com.mipl.PatientManagement.Entiry.Patient;
 @Service
 public class PatientService {
 
-	public static List<Patient> patients = new ArrayList<>(Arrays.asList(new Patient(1, "Micheal", 25,
-			new String[] { "Hypertension ", "Pneumonia" }, new String[] { "metoprolol", "amoxicillin" })));
+	public static List<Patient> patients = new ArrayList<>(Arrays.asList(
+			new Patient(1, "Micheal", 25,
+					new String[] { "Hypertension", "Pneumonia" },
+					new String[] { "metoprolol", "amoxicillin" }),
+			new Patient(2, "John", 35,
+					new String[] { "Hypothyroidism ", "Osteoporosis" },
+					new String[] { "Levothyroxine", "Bisphosphonates" })));
 
 	public static List<Patient> getPatients() {
 		return patients;

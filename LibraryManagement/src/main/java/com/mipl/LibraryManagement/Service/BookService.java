@@ -11,7 +11,9 @@ import com.mipl.LibraryManagement.Entity.Book;
 public class BookService {
 	
 	public static List<Book> books=new ArrayList<>(Arrays.asList(
-			new Book(1,"BK001","Fundamental of Java","James goosling",2003,"Third Edition")));
+			new Book(1,"JAVA003","Fundamental of Java","James Gosling",2003,"Third Edition"),
+			new Book(2,"PY002","Fundamental of Python","Guido van Rossum",2005,"Second Edition"),
+			new Book(3,"PHY005","History of Physics","Galileo Galilei",1995,"Fifth Edition")));
 
 	public static List<Book> lists() {
 		return books;
@@ -19,7 +21,7 @@ public class BookService {
 
 	public static String addNewBook(Book newBook) {
 		books.add(newBook);
-		return "Book added successfully";
+		return "Your new book was added :)";
 	}
 
 	public static String updateData(Book updatedData, int id) {
@@ -31,11 +33,11 @@ public class BookService {
 				book.setAuthor(updatedData.getAuthor());
 				book.setPublishedOn(updatedData.getPublishedOn());
 				book.setEdition(updatedData.getEdition());
-				return "Your details are uploaded";
+				return "Your details are uploaded Successfully";
 			}
 			
 		}
-		return "Record not found";
+		return "Oops! Something went wrong, and it seems the record you are looking for cannot be found.";
 	}
 
 	public static Book bookByID(int id) {
@@ -52,12 +54,12 @@ public class BookService {
 		for (Book book : books) {
 			if (book.getId()==id) {
 				books.remove(book);
-				return "Book removed";
+				return "You mentioned book was deleted :(";
 			}
 		}
 		
 		
-		return "Book not found";
+		return "Oops! Something went wrong, and it seems the record you are looking for cannot be found.";
 	}
 
 }
