@@ -1,5 +1,8 @@
 package com.project.Management.Entity;
 
+import java.io.Serializable;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,18 +14,21 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
+@Data
+public class Employee implements Serializable {
+	public static final long serialVersionUID=1l;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
 	private int id;
-	
+	@Column
 	private String name;
-	
+	@Column
 	private String designation;
-	
+	@Column
 	private long salary;
 	
 	
