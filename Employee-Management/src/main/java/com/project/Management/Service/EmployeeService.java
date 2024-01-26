@@ -13,8 +13,6 @@ public class EmployeeService {
 
 	
 	public void addEmp(Employee employee) {
-		Employee empEntity=new Employee();
-		
 		employeeRepo.save(employee);
 		
 	}

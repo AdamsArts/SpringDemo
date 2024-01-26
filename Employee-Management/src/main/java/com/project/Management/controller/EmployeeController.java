@@ -12,9 +12,9 @@ import com.project.Management.Service.EmployeeService;
 public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
+	
 	@PostMapping("/addemp")
 	public void addEmployee(@RequestBody Employee employee) {
-		System.out.println(employee);
 		employeeService.addEmp(employee);
 	}
 	

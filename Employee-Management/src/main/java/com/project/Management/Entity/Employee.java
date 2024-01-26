@@ -10,13 +10,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Setter
+@Getter
 public class Employee implements Serializable {
 	public static final long serialVersionUID=1l;
 	
@@ -30,6 +33,7 @@ public class Employee implements Serializable {
 	private String designation;
 	@Column
 	private long salary;
+	
 	
 	
 
