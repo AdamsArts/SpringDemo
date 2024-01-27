@@ -1,5 +1,7 @@
 package com.project.Management.Entity;
 
+
+
 import java.io.Serializable;
 
 import jakarta.persistence.Column;
@@ -10,18 +12,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 @Entity
 @Table
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-@Setter
-@Getter
-public class Employee {
+public class Employee implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -57,6 +53,9 @@ public class Employee {
 	public void setSalary(long salary) {
 		this.salary = salary;
 	}
+	
+	
+
 	
 	
 	
