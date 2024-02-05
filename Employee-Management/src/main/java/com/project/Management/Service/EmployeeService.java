@@ -31,7 +31,7 @@ public class EmployeeService {
 			e.setDesignation(employee.getDesignation());
 			e.setSalary(employee.getSalary());
 			employeeRepo.save(e);
-			
+		
 		}
 
 	}
