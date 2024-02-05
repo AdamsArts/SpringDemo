@@ -12,9 +12,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name="EmployeeDetails")
 public class Employee implements Serializable{
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -24,8 +25,9 @@ public class Employee implements Serializable{
 	private String designation;
 	@Column
 	private long salary;
+	
 	public int getId() {
-		return id;
+		return id;	
 	}
 	public void setId(int id) {
 		this.id = id;
